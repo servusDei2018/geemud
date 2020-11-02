@@ -20,6 +20,7 @@ type action struct {
 type Actions struct {
     actions [][]Action
     config Config
+}
    
 func iface(list []string) []interface{} {
       vals := make([]interface{}, len(list))
@@ -52,7 +53,6 @@ for x:=range(a.actions) {
     }
 }    
 return flag
-    
 }
     
 func Init(i bufio.Writer, debug bool) Actions {
